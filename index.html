@@ -26,59 +26,138 @@
 </head>
 
 <body>
-<nav class="navbar navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">logo</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-        >
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    Offcanvas
-                </h5>
-                <button
-                    type="button"
-                    class="btn-close text-reset"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                ></button>
+    <!-- navbar -->
+
+
+    g
+    <nav class="navbar navbar-light fixed-top" style="background: linear-gradient(90deg, #d53369 0%, #daae51 100%);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <button type="button" class="rounded">action</button>
+                </div>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="#"
-                            >active</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                         <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <button type="button" class="rounded">action</button>
+        </div>
+    </nav>
+    <hr class="border-b border-dark-100 opacity-25 my-0 py-0">
+    <!-- hero -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <!-- تم إصلاح الكلاسات لتصبح col-12 للشاشات الصغيرة و col-md-10 أو col-lg-8 حسب الحجم المطلوب لضمان التجاوب -->
+            <div class="col-md-12 col-md-10 mt-5" style="background: linear-gradient(90deg, #d53369 0%, #daae51 100%);">
+
+                <!-- التعديل الأساسي هنا: flex-column تجعل العناصر فوق بعضها، و flex-md-row تعيدها بجانب بعضها بالشاشات الكبيرة -->
+                <div class="d-flex flex-column flex-md-row mb-3 align-items-center justify-content-between p-4">
+
+                    <!-- النص والـ Hero Message -->
+                    <div class="flex-grow-1 mt-1 me-md-4 mb-4 mb-md-0">
+                        <p class="text-white">What business are you?</p>
+                        <h1 class="text-white">Main Hero Message to sell yourself!</h1>
+                        <p class="text-white mt-3">Sub-hero message, not too long and not too short. Make it just right!
+                        </p>
+                        <button type="button" class="btn btn-light rounded-5 mt-4">subscribe</button>
+                    </div>
+
+                    <!-- الصورة المحتوية -->
+                    <div class="flex-shrink-0 text-center">
+                        <!-- إضافة class img-fluid لضمان عدم خروج الصورة عن الحاوية عند تصغير الشاشة -->
+                        <img src="./hero.img" alt="Hero Image" class="img-fluid" style="max-width: 300px;">
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
-</nav>
+
+    </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-md-10 ">
+                <div class="text-center">
+                    <h1 class="text-capitalize mt-5">title</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div
+                                class="d-flex  flex-column flex-md-row mb-3 align-items-center justify-content-between p-4">
+
+                                <div class="flex-grow-1 mt-1 me-md-4 mb-4 mb-md-0">
+                                    <p class="text-gray-600 mb-8 mt-3">
+
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                    at ipsum eu nunc commodo posuere et sit amet ligula.
+                                    <br>
+                                    <br>
+
+                                    Images from:
+
+                                    <a class="text-pink-500 underline" href="https://undraw.co/">undraw.co</a>
+                                    </p>
+                                </div>
+
+                                <div class="flex-shrink-0 text-center">
+                                    <!-- إضافة class img-fluid لضمان عدم خروج الصورة عن الحاوية عند تصغير الشاشة -->
+                                    <img src="./1.img.jpeg" alt="Hero Image" class="img-fluid"
+                                        style="max-width: 300px;">
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="d-flex  flex-column flex-md-row mb-3 align-items-center justify-content-between p-4">
+                            <div class="flex-shrink-0 text-center">
+                                <!-- إضافة class img-fluid لضمان عدم خروج الصورة عن الحاوية عند تصغير الشاشة -->
+                                <img src="./2.img.jpeg" alt="Hero Image" class="img-fluid" style="max-width: 300px;">
+                            </div>
+                            <div class="flex-grow-1 mt-1 me-md-4 mb-4 mb-md-0">
+                                <p class="text-gray-600 mb-8 mt-3">
+
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                at ipsum eu nunc commodo posuere et sit amet ligula.
+                                <br>
+                                <br>
+
+                                Images from:
+
+                                <a class="text-pink-500 underline" href="https://undraw.co/">undraw.co</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<h1>heloo
-    
-</h1>
 
 
 
@@ -88,44 +167,30 @@
 
 
 
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-0X0pG62hJNN3vP6fQtbDNRsTA70vsK1tnE+bBZ5qTqL0U8nyJlcQFV3ayhtq/Y5cHIzoHmr18bODsPwhj/KgkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-</body></html>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
-        integrity="sha512-0X0pG62hJNN3vP6fQtbDNRsTA70vsK1tnE+bBZ5qTqL0U8nyJlcQFV3ayhtq/Y5cHIzoHmr18bODsPwhj/KgkQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
-        integrity="sha512-0X0pG62hJNN3vP6fQtbDNRsTA70vsK1tnE+bBZ5qTqL0U8nyJlcQFV3ayhtq/Y5cHIzoHmr18bODsPwhj/KgkQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-0X0pG62hJNN3vP6fQtbDNRsTA70vsK1tnE+bBZ5qTqL0U8nyJlcQFV3ayhtq/Y5cHIzoHmr18bODsPwhj/KgkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 
