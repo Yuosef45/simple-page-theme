@@ -13,10 +13,23 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .h10 {
-            height: 30rem;
+    
+         <style>
+        /* تخصيص بسيط لتغيير لون الخلفية والنصوص ليناسب التصميم */
+        .custom-footer {
+            background-color: #f8f9fa; /* لون خلفية فاتح */
+            color: #333;
         }
+        .custom-footer a {
+            color: #666;
+            text-decoration: none;
+        }
+        .custom-footer a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+    </style>
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -244,7 +257,7 @@
                                         commodo posuere et sit amet ligula.</p>
                                 </div>
                                 <hr>
-                                <button class="align-self-en rounded-5 fs-5 mb-2 ms-2 p-2 text-white text-center"
+                                <button rounded-5 fs-5 mb-2 ms-2 p-2 text-white text-center"
                                     style="background: linear-gradient(90deg, #d53369 0%, #daae51 100%);">action</button>
                             </div>
                         </div>
@@ -261,8 +274,8 @@
 
             <div class="col-md-4 col-sm-6 mt-5 ">
                 <div class="card-1 border border-1 shadow-sm " style="height: 500px;">
-                    <div class="card-headre text-center fs-5 fw-bold mt-3">free</div>
-                    <div class="card-body text-center mt-5 p-1 text-capitalize">
+                    <div class="card-headre text-center fs-5 fw-bold mt-3 text-muted">free</div>
+                    <div class="card-body text-center mt-5 p-1 text-capitalize text-muted">
                         <p>thing</p>
                         <hr>
                         <p>thing</p>
@@ -271,7 +284,7 @@
                         <hr>
                     </div>
                     <div class="card-footer mb-5">
-                        <h3 class="text-center">$0</h3>
+                        <h3 class="text-center text-muted">£0 for one user</h3>
                     </div>
                     <div class="card-button text-center">
                         <button class="fs-5 fw-bold rounded-5 mb-5"
@@ -293,7 +306,7 @@
                         <hr>
                     </div>
                     <div class="card-footer mb-5">
-                        <h3 class="text-center">$0</h3>
+                        <h3 class="text-center">£x.99 / per user</h3>
                     </div>
                     <div class="card-button text-center">
                         <button class="fs-5 fw-bold rounded-5 mb-5"
@@ -304,8 +317,8 @@
 
             <div class="col-md-4 col-sm-6 mt-5 ">
                 <div class="card-1 border border-1 shadow-sm" style="height: 500px;">
-                    <div class="card-headre text-center fs-5 fw-bold mt-3">pro</div>
-                    <div class="card-body text-center mt-5 p-1 text-capitalize">
+                    <div class="card-headre text-center fs-5 fw-bold mt-3 text-muted">pro</div>
+                    <div class="card-body text-center mt-5 p-1 text-capitalize text-muted">
                         <p>thing</p>
                         <hr>
                         <p>thing</p>
@@ -314,7 +327,7 @@
                         <hr>
                     </div>
                     <div class="card-footer mb-5">
-                        <h3 class="text-center">$0</h3>
+                        <h3 class="text-center text-muted">£x.99 / per user</h3>
                     </div>
                     <div class="card-button text-center">
                         <button class="fs-5 fw-bold rounded-5 mb-5"
@@ -341,13 +354,69 @@
 
 
 
-            <!-- footer -->
+    <!-- Footer -->
+    <footer class="custom-footer py-5 mt-5 border-top">
+        <div class="container">
+            <div class="row">
+                
+              
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-uppercase text-danger"> <a style="font-size:30px ;" class="navbar-brand text-uppercase" href="#"><i
+                    style="height: 50px; font-size: 30px; " class="fa-solid fa-plane-departure"></i>LANDING</a></h5>
+                    <p class="small text-muted"></p>
+                </div>
 
-          
+              
+                <div class="col-6 col-md-2 mb-3">
+                    <h6 class="fw-bold text-uppercase small text-muted">Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Help & Support</a></li>
+                    </ul>
+                </div>
+
+             
+                <div class="col-6 col-md-2 mb-3">
+                    <h6 class="fw-bold text-uppercase small text-muted">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Terms</a></li>
+                        <li class="mb-2"><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+
+               
+                <div class="col-6 col-md-2 mb-3">
+                    <h6 class="fw-bold text-uppercase small text-muted">Social</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Facebook</a></li>
+                        <li class="mb-2"><a href="#">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-3">
+                    <h6 class="fw-bold text-uppercase small text-muted">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Official Blog</a></li>
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    </div>
+       
+    </footer>
+  
+ <div class="col-md-8 col-sm-6">
+    <div class="footer text-center w-full
+    text-capitailize fs-2 fw-bold mt-5"    style="background: linear-gradient(90deg, #d53369 0%, #daae51 100%);">
 
-
+  
+            <a href="#">Background vector created by freepik - www.freepik.com. </a>
+           <h3> <a href="#">Distributed By: Themewagon</a></h3>
+        </div>  </div>
+   
 
     </div>
     </div>
